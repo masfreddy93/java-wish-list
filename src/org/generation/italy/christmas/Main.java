@@ -159,7 +159,7 @@ public class Main {
 		//2. Richiedere all'utente una stringa e mappare ogni singolo carattere con la relativa frequenza
 		
 		Map<Character, Integer> strEs2 = new HashMap<>();
-		System.err.print("Inserire stringa: ");
+		System.out.print("Inserire stringa: ");
 		String uStrEs2 = sc.nextLine();
 				
 		
@@ -174,11 +174,11 @@ public class Main {
 	        }
 	    }
 		
-		System.out.println(strEs2);
+		System.out.println("Stampa MAP: " + strEs2);
 		System.out.println("------");
 		
 		//*BONUS:* stampare i caratteri in ordine alfabetico
-		TreeMap<Character, Integer> hashToTree = new TreeMap<>(strEs2);
+		Map<Character, Integer> hashToTree = new TreeMap<>(strEs2);
 		System.out.println("Stampa MAP in ORDINE ALFABETICO" + hashToTree);
 		
 		
