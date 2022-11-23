@@ -20,31 +20,28 @@ public class Main {
 //			
 //			System.out.println(desiderio);  //visualizzare a video lista desideri
 //		}
-		System.out.println("Vuoi aggiungere un desiderio? (Digitare 'si' o 'no')");
-		String domanda = sc.nextLine();
 		
+		for(int i = -1; i < listaDesideri.size(); i++) {
 		
-		if(domanda.equalsIgnoreCase("si")) {
+			System.out.println("Vuoi aggiungere un desiderio? (Digitare 'si' o 'no')");
+			String domanda = sc.nextLine();
+		
 			
-			System.out.println("Digitare desiderio");
-			String des = sc.nextLine();
-			listaDesideri.add(des);
-			System.out.println("Desiderio espresso: " + des);
-			
-			
-			for(String desiderio: listaDesideri) {
+			if(domanda.equalsIgnoreCase("si")) {
 				
-				System.out.println("Lunghezza lista: " + listaDesideri.size());
+				System.out.println("Digitare desiderio");
+				String des = sc.nextLine();
+				listaDesideri.add(des);
+//				System.out.println("Desiderio espresso: " + des);
+			
+				System.out.println("Lunghezza lista: " + listaDesideri.size());				
 			}
-			
-			
-			listaDesideri.sort(null);
-			System.out.println("Lista dei desideri ordinata: ");
 		}
 		
+		listaDesideri.sort(null);
+		System.out.println("Lista dei desideri ordinata: " + listaDesideri);
 		
 //		listaDesideri.clear();
-		
 		
 	}
 }
