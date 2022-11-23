@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class Main {
 	
@@ -163,19 +164,23 @@ public class Main {
 				
 		
 
-	      for(int i= 0 ; i< uStrEs2.length() ; i++) {
-	          Character ch=uStrEs2.charAt(i);
-	         if(strEs2.containsKey(ch)) {
-	            int count = strEs2.get(ch);
+	    for(int i= 0 ; i< uStrEs2.length() ; i++) {
+	    	Character ch=uStrEs2.charAt(i);
+	        if(strEs2.containsKey(ch)) {
+	        	int count = strEs2.get(ch);
 	            strEs2.put(ch,count+1);
-	         } else {
-	             strEs2.put(ch,1);
-	         }
-	      }
+	        } else {
+	            strEs2.put(ch,1);
+	        }
+	    }
 		
 		System.out.println(strEs2);
+		System.out.println("------");
 		
 		//*BONUS:* stampare i caratteri in ordine alfabetico
+		TreeMap<Character, Integer> hashToTree = new TreeMap<>(strEs2);
+		System.out.println("Stampa MAP in ORDINE ALFABETICO" + hashToTree);
+		
 		
 		
 		
