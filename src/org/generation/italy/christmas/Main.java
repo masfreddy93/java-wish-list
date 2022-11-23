@@ -16,7 +16,7 @@ public class Main {
 //		listaDesideri.add("desiderio prova2");
 		
 //		System.out.println(listaDesideri);
-//		for(String desiderio: listaDesideri) {
+//		for(String desiderio: listaDesideri) {  //foreach
 //			
 //			System.out.println(desiderio);  //visualizzare a video lista desideri
 //		}
@@ -37,6 +37,8 @@ public class Main {
 				System.out.println("Lunghezza lista: " + listaDesideri.size());				
 			}
 		}
+		
+		sc.close();
 		
 		listaDesideri.sort(null);
 		System.out.println("Lista dei desideri ordinata: " + listaDesideri);
